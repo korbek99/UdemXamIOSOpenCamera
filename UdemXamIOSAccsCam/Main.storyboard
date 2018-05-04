@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bQ1-DG-EWH">
+                                <rect key="frame" x="0.0" y="71" width="375" height="476"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCG-dQ-Ai4">
+                                <rect key="frame" x="59" y="555" width="257" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="UmX-2i-592"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Acceso  a Camara">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-3K-6ic">
+                                <rect key="frame" x="59" y="21" width="257" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="xUC-OG-qcz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Acceso  a Biblioteca">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.069482252760000002" green="0.76599602079999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bQ1-DG-EWH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="99k-tl-YNq"/>
+                            <constraint firstAttribute="trailing" secondItem="bQ1-DG-EWH" secondAttribute="trailing" id="Ah4-MF-NeP"/>
+                            <constraint firstItem="4aH-3K-6ic" firstAttribute="trailing" secondItem="xCG-dQ-Ai4" secondAttribute="trailing" id="GjX-4A-Z0w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xCG-dQ-Ai4" secondAttribute="bottom" constant="71" id="Na5-Zi-Ozs"/>
+                            <constraint firstItem="bQ1-DG-EWH" firstAttribute="centerX" secondItem="xCG-dQ-Ai4" secondAttribute="centerX" id="g5n-Zk-eet"/>
+                            <constraint firstItem="4aH-3K-6ic" firstAttribute="leading" secondItem="xCG-dQ-Ai4" secondAttribute="leading" id="u5E-TH-U0u"/>
+                            <constraint firstItem="4aH-3K-6ic" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="43" id="uXt-eF-nek"/>
+                            <constraint firstItem="xCG-dQ-Ai4" firstAttribute="top" secondItem="bQ1-DG-EWH" secondAttribute="bottom" constant="8" symbolic="YES" id="v89-HE-YWe"/>
+                            <constraint firstItem="bQ1-DG-EWH" firstAttribute="top" secondItem="4aH-3K-6ic" secondAttribute="bottom" constant="8" symbolic="YES" id="xbl-2K-Okb"/>
+                            <constraint firstItem="4aH-3K-6ic" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="yS0-On-yF4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BtnCargar" destination="4aH-3K-6ic" id="pF5-HK-fWQ"/>
+                        <outlet property="BtnCargarCamara" destination="xCG-dQ-Ai4" id="lEO-On-bJl"/>
+                        <outlet property="Imagen" destination="bQ1-DG-EWH" id="tA9-TX-p7A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
