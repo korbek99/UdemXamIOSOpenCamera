@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,43 +22,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bQ1-DG-EWH">
-                                <rect key="frame" x="0.0" y="71" width="375" height="476"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="398"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCG-dQ-Ai4">
-                                <rect key="frame" x="59" y="555" width="257" height="41"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="149" y="516" width="87" height="81"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="UmX-2i-592"/>
+                                    <constraint firstAttribute="width" constant="87" id="88h-R7-koN"/>
+                                    <constraint firstAttribute="height" constant="81" id="gCd-Z3-ieg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <state key="normal" title="Acceso  a Camara">
+                                <state key="normal" backgroundImage="02 - Galery.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-3K-6ic">
-                                <rect key="frame" x="59" y="21" width="257" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-3K-6ic">
+                                <rect key="frame" x="134" y="20" width="96" height="82"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="xUC-OG-qcz"/>
+                                    <constraint firstAttribute="height" constant="82" id="PQE-Uf-zaz"/>
+                                    <constraint firstAttribute="width" constant="96" id="apt-q1-QBu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <state key="normal" title="Acceso  a Biblioteca">
+                                <state key="normal" title="Galeria" image="01- camera.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.069482252760000002" green="0.76599602079999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="bQ1-DG-EWH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="99k-tl-YNq"/>
-                            <constraint firstAttribute="trailing" secondItem="bQ1-DG-EWH" secondAttribute="trailing" id="Ah4-MF-NeP"/>
-                            <constraint firstItem="4aH-3K-6ic" firstAttribute="trailing" secondItem="xCG-dQ-Ai4" secondAttribute="trailing" id="GjX-4A-Z0w"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xCG-dQ-Ai4" secondAttribute="bottom" constant="71" id="Na5-Zi-Ozs"/>
-                            <constraint firstItem="bQ1-DG-EWH" firstAttribute="centerX" secondItem="xCG-dQ-Ai4" secondAttribute="centerX" id="g5n-Zk-eet"/>
-                            <constraint firstItem="4aH-3K-6ic" firstAttribute="leading" secondItem="xCG-dQ-Ai4" secondAttribute="leading" id="u5E-TH-U0u"/>
-                            <constraint firstItem="4aH-3K-6ic" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="43" id="uXt-eF-nek"/>
-                            <constraint firstItem="xCG-dQ-Ai4" firstAttribute="top" secondItem="bQ1-DG-EWH" secondAttribute="bottom" constant="8" symbolic="YES" id="v89-HE-YWe"/>
-                            <constraint firstItem="bQ1-DG-EWH" firstAttribute="top" secondItem="4aH-3K-6ic" secondAttribute="bottom" constant="8" symbolic="YES" id="xbl-2K-Okb"/>
-                            <constraint firstItem="4aH-3K-6ic" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="yS0-On-yF4"/>
+                            <constraint firstItem="xCG-dQ-Ai4" firstAttribute="top" secondItem="bQ1-DG-EWH" secondAttribute="bottom" constant="8" symbolic="YES" id="AhT-C8-pMw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xCG-dQ-Ai4" secondAttribute="bottom" constant="70" id="KeO-gC-c66"/>
+                            <constraint firstItem="xCG-dQ-Ai4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="149" id="P32-u0-pNS"/>
+                            <constraint firstAttribute="trailing" secondItem="bQ1-DG-EWH" secondAttribute="trailing" id="YoB-dr-bkt"/>
+                            <constraint firstItem="4aH-3K-6ic" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iTc-PA-7yb"/>
+                            <constraint firstItem="bQ1-DG-EWH" firstAttribute="top" secondItem="4aH-3K-6ic" secondAttribute="bottom" constant="8" symbolic="YES" id="uR4-KJ-sAY"/>
+                            <constraint firstItem="bQ1-DG-EWH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yo9-qf-FMP"/>
+                            <constraint firstItem="4aH-3K-6ic" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="134" id="zwe-fs-LuQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,4 +69,8 @@
             <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01- camera.png" width="1600" height="1600"/>
+        <image name="02 - Galery.png" width="200" height="200"/>
+    </resources>
 </document>

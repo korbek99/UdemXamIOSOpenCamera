@@ -28,14 +28,14 @@ namespace UdemXamIOSAccsCam
 				BtnCargar = null;
 			}
 
-			if (Imagen != null) {
-				Imagen.Dispose ();
-				Imagen = null;
-			}
-
 			if (BtnCargarCamara != null) {
 				BtnCargarCamara.Dispose ();
 				BtnCargarCamara = null;
+			}
+
+			if (Imagen != null) {
+				Imagen.Dispose ();
+				Imagen = null;
 			}
 		}
 	}

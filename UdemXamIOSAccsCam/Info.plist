@@ -2,18 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleName</key>
-	<string>${AppName}</string>
+	<key>CFBundleDisplayName</key>
+	<string>IOsCamera</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.korbek99.AppName</string>
+	<key>CFBundleName</key>
+	<string>${AppName}</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
 	<string>10.2</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Permiso para la Camara</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Permiso para la Biblioteca de Imagenes</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -36,9 +42,5 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Permiso para la Camara</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Permiso para la Biblioteca de Imagenes</string>
 </dict>
 </plist>
